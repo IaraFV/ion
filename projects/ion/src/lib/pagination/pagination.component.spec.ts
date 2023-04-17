@@ -161,7 +161,7 @@ describe('PaginationComponent with Ellipsis', () => {
     expect(document.querySelectorAll('.square-pag')).toHaveLength(7);
   });
 
-  it('should render up to five pages more when the second ellipsis is clicked', async () => {
+  it('should be size 9 when the second ellipsis is clicked', async () => {
     await sut({
       total: 46,
       itemsPerPage: 2,
